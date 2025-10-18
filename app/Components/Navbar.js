@@ -22,13 +22,13 @@ export default function Navbar() {
       </ul>
 
       {/* CV Button (Desktop only) */}
-      <a
-        href="/Personal-portfolio/my-portfolio/public/Minimalist Professional CV Resume (3).pdf" // place file in /public/HuzaifaCV.pdf
+      <Link
+        href="/HuzaifaCV.pdf" // place file in /public/HuzaifaCV.pdf
         download
         className="hidden md:inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full px-5 py-2 shadow-md transition-all duration-300 hover:shadow-blue-500/30"
       >
         Download CV
-      </a>
+      </Link>
 
       {/* Mobile Menu Icon */}
       <button
@@ -46,14 +46,14 @@ export default function Navbar() {
           <Link href="/projects" className="text-gray-300 hover:text-blue-400 transition-all duration-300" onClick={() => setIsOpen(false)}>Projects</Link>
           <Link href="/about" className="text-gray-300 hover:text-blue-400 transition-all duration-300" onClick={() => setIsOpen(false)}>About</Link>
           <Link href="/contact" className="text-gray-300 hover:text-blue-400 transition-all duration-300" onClick={() => setIsOpen(false)}>Contact</Link>
-          <a
-            href="/Personal-portfolio/my-portfolio/public/Minimalist Professional CV Resume (3).pdf"
+          <Link
+            href="/HuzaifaCV.pdf"
             download
             className="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full px-5 py-2 shadow-md transition-all duration-300"
             onClick={() => setIsOpen(false)}
           >
             Download CV
-          </a>
+          </Link>
         </div>
       )}
     </nav>
