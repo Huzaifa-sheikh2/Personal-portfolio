@@ -46,7 +46,7 @@ function TypingEffect() {
         </div>
 
         {/* Right Side - Image */}
-        <div className="flex justify-center md:justify-end w-full md:w-1/2 sm: my-10">
+        <div className="flex justify-center md:justify-end w-full md:w-1/2 h-90 sm: my-10">
           <Image
             src="/Image.png" // ✅ make sure image is inside /public
             alt="Profile picture"
