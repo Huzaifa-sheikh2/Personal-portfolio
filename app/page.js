@@ -56,6 +56,27 @@ function TypingEffect() {
           />
         </div>
       </div>
+      <div className="flex w-70 gap-4 justify-center mt-1 mx-2 opacity-70">
+
+    
+        <Image
+        src="/html.webp"
+        alt="Wave Divider"
+        width={100}
+        height={10}
+        className="w-full h-auto"
+        />
+
+        <Image
+        src="/css.jpeg"
+        alt="Wave Divider"
+        width={100}
+        height={10}
+        className="w-full h-auto"
+        />
+      
+        </div>
+      <h1>This haiwdoisnaidnw</h1>
     </div>
   );
 }
