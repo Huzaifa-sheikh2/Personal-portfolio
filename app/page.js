@@ -100,8 +100,10 @@ function TypingEffect() {
           />
         ))}
       </motion.div>
+    </div >
+    <div className="">
+      <h1 className="text-center text-5xl h-100 my-10">Skills</h1>
     </div>
-    <h1 className="text-center my-10 text-5xl font-serif">Skills</h1>
     </div>
   );
 }
