@@ -43,6 +43,7 @@ function TypingEffect() {
               on every device.
             </p>
           </section>
+          
         </div>
 
         {/* Right Side - Image */}
@@ -56,7 +57,7 @@ function TypingEffect() {
           />
         </div>
       </div>
-      <div className="flex w-70 gap-4 justify-center mt-1 mx-2 opacity-70">
+      <div className="flex w-70 gap-4 justify-center mt-1 mx-17 opacity-70">
 
     
         <Image
@@ -64,7 +65,6 @@ function TypingEffect() {
         alt="Wave Divider"
         width={100}
         height={10}
-        className="w-full h-auto"
         />
 
         <Image
@@ -72,9 +72,14 @@ function TypingEffect() {
         alt="Wave Divider"
         width={100}
         height={10}
-        className="w-full h-auto"
         />
-      
+
+        <Image
+        src="/JavaScript.png"
+        alt="Wave Divider"
+        width={70}
+        height={100}
+        />
         </div>
       <h1>This haiwdoisnaidnw</h1>
     </div>
