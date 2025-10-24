@@ -2,7 +2,16 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
+const logos = [
+  "/html.webp",
+  "/css.jpeg",
+  "/JavaScript.png",
+  "/react.png",
+  "/next.jpg",
+  "/node.png",
+];
 function TypingEffect() {
   return (
     <div className="pb-20"> {/* ✅ Add bottom padding to prevent footer overlap */}
@@ -57,31 +66,42 @@ function TypingEffect() {
           />
         </div>
       </div>
-      <div className="flex w-70 gap-4 justify-center mt-1 mx-17 opacity-70">
+      <div className="overflow-hidden w-full mt-1">
+      <motion.div
+        className="flex gap-50 opacity-70"
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{
+          ease: "linear",
+          duration: 15,
+          repeat: Infinity,
+        }}
+      >
+        {/* first set */}
+        {logos.map((logo, index) => (
+          <Image
+            key={index}
+            src={logo}
+            alt="Tech Logo"
+            width={100}
+            height={100}
+            className="rounded-xl border border-amber-50"
+          />
+        ))}
 
-    
-        <Image
-        src="/html.webp"
-        alt="Wave Divider"
-        width={100}
-        height={10}
-        />
-
-        <Image
-        src="/css.jpeg"
-        alt="Wave Divider"
-        width={100}
-        height={10}
-        />
-
-        <Image
-        src="/JavaScript.png"
-        alt="Wave Divider"
-        width={70}
-        height={100}
-        />
-        </div>
-      <h1>This haiwdoisnaidnw</h1>
+        {/* duplicate set for seamless looping */}
+        {logos.map((logo, index) => (
+          <Image
+            key={index + logos.length}
+            src={logo}
+            alt="Tech Logo"
+            width={100}
+            height={100}
+            className="rounded-xl border border-amber-50"
+          />
+        ))}
+      </motion.div>
+    </div>
+    <h1 className="text-center my-10 text-5xl font-serif">Skills</h1>
     </div>
   );
 }
