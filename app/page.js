@@ -14,12 +14,14 @@ const logos = [
 ];
 function TypingEffect() {
   return (
-    <div className="pb-20"> {/* ✅ Add bottom padding to prevent footer overlap */}
+    <div className="pb-20 "> {/* ✅ Add bottom padding to prevent footer overlap */}
       <div
         className="flex flex-col-reverse md:flex-row items-center justify-between 
-                   min-h-screen px-6 md:px-20 py-10 
-                   bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] 
-                   text-gray-200"
+             min-h-screen px-6 md:px-20 py-10 
+             transition-colors duration-700 
+             bg-gradient-to-br from-gray-100 via-gray-200 to-gray-100 
+             dark:from-[#0f172a] dark:via-[#1e293b] dark:to-[#0f172a] 
+             text-gray-800 dark:text-gray-200"
       >
         {/* Left Side - Text */}
         <div className="flex flex-col justify-center w-full md:w-1/2 space-y-4 text-center md:text-left mt-10 md:mt-0">
