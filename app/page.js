@@ -3,6 +3,7 @@ import React from "react";
 import { ReactTyped } from "react-typed";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Links from "./Components/Links";
 
 const logos = [
   "/html.webp",
@@ -48,13 +49,13 @@ function TypingEffect() {
               About Me
             </h2>
             <p className="max-w-xl mx-auto md:mx-0 text-base sm:text-lg leading-relaxed font-serif">
-              I'm a passionate web developer skilled in building responsive, fast,
-              and modern websites using the MERN stack and WordPress.  
-              I love turning creative ideas into digital experiences that work beautifully
-              on every device.
-            </p>
+                I&apos;m a passionate web developer skilled in building responsive, fast,
+                and modern websites using the MERN stack and WordPress.  
+                I love turning creative ideas into digital experiences that work beautifully
+                on every device.
+              </p>
           </section>
-          
+          <Links/>
         </div>
 
         {/* Right Side - Image */}
