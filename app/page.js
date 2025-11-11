@@ -27,7 +27,7 @@ function TypingEffect() {
         {/* Left Side - Text */}
         <div className="flex flex-col justify-center w-full md:w-1/2 space-y-4 text-center md:text-left mt-10 md:mt-0">
           <h1 className="text-cyan-400 text-5xl font-serif">Muhammad Huzaifa</h1>
-          <h1 className="py-3 text-3xl sm:text-4xl font-semibold font-serif">
+          <h1 className="py-1 text-3xl sm:text-4xl font-semibold font-serif">
             I work with{" "}
             <span className="text-cyan-400 font-serif">
               <ReactTyped
@@ -45,7 +45,7 @@ function TypingEffect() {
             </span>
           </h1>
           <section id="about" className="py-6 text-gray-300">
-            <h2 className="text-2xl sm:text-3xl font-bold text-purple-400 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-purple-400 mb-2">
               About Me
             </h2>
             <p className="max-w-xl mx-auto md:mx-0 text-base sm:text-lg leading-relaxed font-serif">
